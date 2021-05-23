@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monopoke Game</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.min.css"
+    />
+  </head>
+
+  <body>
+    <h2>Monpoke Battle</h2>
+    <div class="container">
+      <label class="title">Output</label>
+      <p id="output" class="inner">Create your teams to begin battle</p>
+    </div>
+    <div class="container">
+      <label class="title">Input</label>
+      <div class="inner">
+        <form id="form">
+          <textarea
+            class="input"
+            name="command"
+            placeholder="Enter commands here"
+          ></textarea>
+          <button type="submit" class="btn">enter</button>
+        </form>
+        <p>OR</p>
+        <input type="file" id="file-selector" class="btn" />
+      </div>
+    </div>
+
+    <script src="js/game.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/monopoke.js"></script>
+    <script src="js/team.js"></script>
+  </body>
+</html>
