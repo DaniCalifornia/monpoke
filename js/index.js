@@ -20,7 +20,6 @@ function readFileAsync(file) {
 async function processFile(file) {
   try {
     let commands = await readFileAsync(file);
-    console.log(commands);
     processCommands(commands);
   } catch (err) {
     console.log(err);
@@ -50,7 +49,6 @@ function processCommands(input) {
   for (let command of commands) {
     if (!game.gameOver) {
       // split each command by word
-      console.log(command);
       const splitCommand = command.split(' ');
       const key = splitCommand[0].trim();
 
@@ -67,7 +65,6 @@ function processCommands(input) {
         }
         // if team is created successfully, add monopoke to team
         newTeam.addMonopoke(monpokeId, hp, ap);
-        console.log('new team', newTeam);
 
         // add result of command to game output
         game.updateOutput(

@@ -1,7 +1,7 @@
 # Monpoke
 
-Text-based Monpoke battle game
-** any similarity to other role-playing game involving pocket monsters is purely coincidental **
+Text-based Monpoke battle game -
+_any similarity to other role-playing games involving pocket monsters is purely coincidental_
 
 ## Getting Started
 
